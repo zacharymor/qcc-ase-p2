@@ -1,6 +1,6 @@
 # MyApp
 
-This project is a React application that uses React Router for navigation and is styled with Bootstrap. It is designed to be deployed on GitHub Pages.
+This project is a React application deployed on GitHub Pages.
 
 ## Table of Contents
 
@@ -130,8 +130,3 @@ Your app should now be accessible at `https://username.github.io/repo-name`.
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
