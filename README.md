@@ -1,6 +1,74 @@
-# Getting Started with Create React App
+# MyApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that uses React Router for navigation and is styled with Bootstrap. It is designed to be deployed on GitHub Pages.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [Available Scripts](#available-scripts)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Getting Started
+
+To get a local copy of this project up and running, follow these steps:
+
+### Prerequisites
+
+- Node.js (https://nodejs.org/)
+- npm (Node Package Manager, comes with Node.js)
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/zachary-mor/qcc-ase-p2.git
+```
+
+2. Navigate to the project directory
+
+```bash
+cd qcc-ase-p2
+```
+
+3. Install the dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
+
+```bash
+npm start
+```
+
+The app should now be running on http://localhost:3000.
+
+## Folder Structure
+
+The project structure is as follows:
+
+```
+repo-name/
+  ├── public/
+  ├── src/
+  │   ├── App.css
+  │   ├── App.js
+  │   ├── index.js
+  │   └── components/
+  │       ├── Header.js
+  │       ├── Footer.js
+  │       ├── Home.js
+  │       ├── About.js
+  │       ├── Services.js
+  │       └── Contact.js
+  ├── package.json
+  └── README.md
+```
 
 ## Available Scripts
 
@@ -8,63 +76,62 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### GitHub Pages
 
-### `npm run eject`
+To deploy the project to GitHub Pages, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Update the `homepage` field in your `package.json` to:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```json
+"homepage": "https://username.github.io/repo-name"
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Add the `basename` prop to the `Router` component in `App.js`:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```jsx
+<Router basename="/repo-name">
+```
 
-## Learn More
+Replace `/repo-name` with the actual name of your GitHub repository.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install the `gh-pages` package if you haven't already:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install --save gh-pages
+```
 
-### Code Splitting
+4. Add the following scripts to your `package.json`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```json
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
 
-### Analyzing the Bundle Size
+5. Deploy the app to GitHub Pages:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run deploy
+```
 
-### Making a Progressive Web App
+Your app should now be accessible at `https://username.github.io/repo-name`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
