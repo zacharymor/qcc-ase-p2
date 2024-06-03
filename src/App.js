@@ -13,10 +13,10 @@ function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/">Home</Nav.Link>
-          <Nav.Link as={Link} to="/about">About</Nav.Link>
-          <Nav.Link as={Link} to="/services">Services</Nav.Link>
-          <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          <Nav.Link as={Link} to="/qcc-ase-p2">Home</Nav.Link>
+          <Nav.Link as={Link} to="/qcc-ase-p2/about">About</Nav.Link>
+          <Nav.Link as={Link} to="/qcc-ase-p2/services">Services</Nav.Link>
+          <Nav.Link as={Link} to="/qcc-ase-p2/contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -84,10 +84,10 @@ function App() {
         <Header />
         <Main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/qcc-ase-p2" element={<Home />} />
+            <Route path="/qcc-ase-p2/about" element={<About />} />
+            <Route path="/qcc-ase-p2/services" element={<Services />} />
+            <Route path="/qcc-ase-p2/contact" element={<Contact />} />
           </Routes>
         </Main>
         <Footer />
