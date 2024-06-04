@@ -5,6 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import cards from './cards';
 
 function Header() {
   return (
@@ -23,7 +24,6 @@ function Header() {
   );
 }
 
-
 function Main({ children }) {
   return (
     <Container className="my-5">
@@ -32,7 +32,65 @@ function Main({ children }) {
   );
 }
 
+function Card(props) {
+  return (
+    <div
+      className="cardStyle p-3"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <h1>
+        Card {props.cardID} {props.cardName} {props.cardSpeices}
+      </h1>
+      <img src={props.imgURL} alt={props.cardSpeices} />
+      <p>{props.descrption}</p>
+      <button
+        style={{
+          color: "#fff",
+          backgroundColor: "#000",
+          padding: "10px 20px",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          fontSize: "16px",
+          transition: "background-color 0.3s ease",
+        }}
+      >
+        Learn More {props.cardID}
+      </button>
+    </div>
+  );
+}
 
+function createCard(val) {
+  return (
+    <Card
+      key={val.cardID}
+      cardID={val.cardID}
+      cardName={val.name}
+      imgURL={val.imgURL}
+      cardType={val.species}
+    />
+  );
+}
+
+const Grid = () => {
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 1fr)",
+        gap: "1rem",
+      }}
+    >
+      {cards.map(createCard)}
+    </div>
+  );
+};
 
 function Footer() {
   return (
@@ -47,6 +105,7 @@ function Home() {
     <div>
       <h1>Home Page</h1>
       <p>Welcome to the Home page!</p>
+      <Grid /> {/* Add Grid component here */}
     </div>
   );
 }
@@ -77,6 +136,7 @@ function Contact() {
     </div>
   );
 }
+
 function App() {
   return (
     <Router basename="/qcc-ase-p2">
