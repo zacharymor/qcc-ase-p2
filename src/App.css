@@ -1,6 +1,8 @@
 /* src/App.css */
 body {
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
+
 }
 
 h1 {
@@ -11,4 +13,27 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.animated-badge {
+  position: absolute;
+  left: -250px; /* Start off screen */
+  top: 72px;
+  animation: slide 10s linear infinite;
+  z-index: 300000;
+  overflow-x: hidden;
+
+}
+
+@keyframes slide {
+  0% {
+    left: -250px; /* Start off screen */
+  }
+  100% {
+    left: calc(100% + 100px); /* Move across screen */
+  }
+
+}
+
+.header {
 }
