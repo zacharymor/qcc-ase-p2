@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/qcc-ase-p2/static/css/main.8c54ac2d.css",
-    "main.js": "/qcc-ase-p2/static/js/main.f2f28ca7.js",
+    "main.js": "/qcc-ase-p2/static/js/main.6a8ff564.js",
     "index.html": "/qcc-ase-p2/index.html",
     "main.8c54ac2d.css.map": "/qcc-ase-p2/static/css/main.8c54ac2d.css.map",
-    "main.f2f28ca7.js.map": "/qcc-ase-p2/static/js/main.f2f28ca7.js.map"
+    "main.6a8ff564.js.map": "/qcc-ase-p2/static/js/main.6a8ff564.js.map"
   },
   "entrypoints": [
     "static/css/main.8c54ac2d.css",
-    "static/js/main.f2f28ca7.js"
+    "static/js/main.6a8ff564.js"
   ]
 }
