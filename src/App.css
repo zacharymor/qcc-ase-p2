@@ -20,7 +20,7 @@ footer {
   left: -250px; /* Start off screen */
   top: 72px;
   animation: slide 10s linear infinite;
-  z-index: 300000;
+  z-index: 300;
   overflow-x: hidden;
 
 }
@@ -35,5 +35,3 @@ footer {
 
 }
 
-.header {
-}

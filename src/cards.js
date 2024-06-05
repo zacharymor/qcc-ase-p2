@@ -8,6 +8,7 @@ const cards = [
     hobby: "run",
     imgURL: "https://via.placeholder.com/200",
     ownerID: 103,
+    price: "$100",
   },
   {
     cardID: 2,
@@ -18,6 +19,7 @@ const cards = [
     hobby: "scracth",
     imgURL: "https://via.placeholder.com/200",
     ownerID: 102,
+    price: "$1,000",
   },
   {
     cardID: 3,
@@ -28,6 +30,7 @@ const cards = [
     hobby: "Jump",
     imgURL: "https://via.placeholder.com/200",
     ownerID: 101,
+    price: "$10,000",
   },
   {
     cardID: 4,
@@ -38,6 +41,7 @@ const cards = [
     hobby: "sleep",
     imgURL: "https://via.placeholder.com/200",
     ownerID: 104,
+    price: "$100,000",
   },
   {
     cardID: 5,
@@ -48,6 +52,7 @@ const cards = [
     hobby: "fetch",
     imgURL: "https://via.placeholder.com/200",
     ownerID: 105,
+    price: "$500,000",
   },
   {
     cardID: 6,
@@ -58,6 +63,7 @@ const cards = [
     hobby: "hop",
     imgURL: "https://via.placeholder.com/200",
     ownerID: 106,
+    price: "$1,000,000",
   },
 ];
 
