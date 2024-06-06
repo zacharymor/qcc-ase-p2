@@ -9,7 +9,7 @@ function Card(props) {
         <img src={props.imgURL} alt={props.type} style={{ width: '90%', height: '90%', margin: '0 auto' }} />
         <p>{props.description}</p>
         <Button
-          className="btn btn-warning"
+          className="btn btn-warning border-success border-5"
           data-bs-toggle="modal"
           data-bs-target={"#cardModal" + props.cardID}
         >
