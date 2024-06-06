@@ -2,7 +2,6 @@
 body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
-
 }
 
 h1 {
@@ -10,7 +9,6 @@ h1 {
 }
 
 footer {
-  position: fixed;
   width: 100%;
   bottom: 0;
 }
