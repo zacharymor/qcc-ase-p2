@@ -8,6 +8,7 @@ function createCard(val) {
             key={val.cardID}
             cardID={val.cardID}
             color={val.color}
+            design={val.design}
             type={val.type}
             imgURL={val.imgURL}
             price={val.price}
