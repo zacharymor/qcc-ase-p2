@@ -4,7 +4,7 @@ import Modal from "./Modal";
 function Card(props) {
   return (
     <Col className="col p-3 col-4" style={{ minWidth: "250px" }}>
-      <div className="card p-3 text-center mb-5">
+      <div className="card p-3 text-center mb-5 bg-dark text-white border-warning">
         <h2>{props.color} {props.design} {props.type}</h2>
         <img src={props.imgURL} alt={props.type} style={{ width: '90%', height: '90%', margin: '0 auto' }} />
         <p>{props.description}</p>

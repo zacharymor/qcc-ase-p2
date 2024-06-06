@@ -6,7 +6,7 @@ function Home() {
 
     return (
       <div>
-        <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="jumbotron jumbotron-fluid mb-5 border border-success">
           <h1 class="display-4">Hello, Alien!</h1>
           <p class="lead">
           Welcome to our intergalactic fashion haven! Explore our stellar collection of 
@@ -18,12 +18,12 @@ function Home() {
           Happy shopping, fellow alien aficionado!
           </p>
           <p class="lead">
-            <a class="btn btn-success btn-lg" href="#grid-scroll" role="button">
+            <a class="btn btn-dark btn-lg border-success" href="#grid-scroll" role="button">
               Buy Now
             </a>
           </p>
         </div>
-        <h1 id="grid-scroll">Buy stuff please</h1>
+        <h1 id="grid-scroll">Yee! Haw! Space Cow!</h1>
         <Grid />
       </div>
     );
