@@ -6,7 +6,7 @@ function Card(props) {
     <Col className="col p-3 col-4" style={{ minWidth: "250px" }}>
       <div className="card p-3 text-center mb-5">
         <h2>{props.color} {props.design} {props.type}</h2>
-        <img src={props.imgURL} alt={props.type} style={{ width: '350px', height: '370px', margin: '0 auto' }} />
+        <img src={props.imgURL} alt={props.type} style={{ width: '90%', height: '90%', margin: '0 auto' }} />
         <p>{props.description}</p>
         <Button
           className="btn btn-warning"
