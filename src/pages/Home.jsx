@@ -1,7 +1,9 @@
 import Grid from "../components/Grid";
-  
+import "../App.css"
+
 
 function Home() {
+
     return (
       <div>
         <div class="jumbotron jumbotron-fluid mb-5">
@@ -16,7 +18,7 @@ function Home() {
           Happy shopping, fellow alien aficionado!
           </p>
           <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#grid-scroll" role="button">
+            <a class="btn btn-success btn-lg" href="#grid-scroll" role="button">
               Buy Now
             </a>
           </p>
