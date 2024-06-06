@@ -2,15 +2,53 @@
 body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+  background-color: black;
+}
+
+#root {
+  background-color: black;
 }
 
 h1 {
   color: #333;
 }
 
+
 footer {
   width: 100%;
   bottom: 0;
+}
+
+/* StarryBackground.css */
+
+#home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  opacity: 0;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .animated-badge {
@@ -23,6 +61,10 @@ footer {
 
 }
 
+#grid-scroll {
+  color: greenyellow;
+}
+
 @keyframes slide {
   0% {
     left: -250px; /* Start off screen */
@@ -33,6 +75,7 @@ footer {
 
 }
 
+<<<<<<< HEAD
 
 .btn {
   color: #fff;
@@ -43,4 +86,11 @@ footer {
   color: #fff;
   background-color: #00b3db;
   border-color: #285e8e; /*set the color you want here*/
+=======
+.jumbotron {
+  background-color: rgba(24, 234, 9, 0.2);
+  color: #FFF;
+  border-radius: 20px;
+  padding: 20px;
+>>>>>>> origin
 }
